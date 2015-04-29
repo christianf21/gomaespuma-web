@@ -48,9 +48,9 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('no-responder@gomaespumacolor.com' => 'Goma Espuma Color'),
-		'host' => 'ssl://smtpout.europe.secureserver.net',
-		'port' => 465,
+		'from' => array('contacto-paginaweb@gomaespumacolor.com' => 'Goma Espuma Color'),
+		'host' => 'smtpout.europe.secureserver.net',
+		'port' => 3535,
 		'timeout' => 30,
 		'username' => 'no-responder@gomaespumacolor.com',
 		'password' => 'jackie21',
