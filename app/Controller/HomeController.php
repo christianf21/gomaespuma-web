@@ -80,7 +80,6 @@ class HomeController extends AppController {
                 $this->Session->setFlash("Debes rellenar todos los campos del formulario de Contacto.","error");
             }
             
-            $this->Session->setFlash("Por favor envianos un correo a info@gomaespumacolor.com , este formulario aun no esta activo.","error");
             $this->redirect(array("controller"=>"home","action"=>"home"));
         }
     }
