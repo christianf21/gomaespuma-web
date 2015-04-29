@@ -9,7 +9,8 @@ and open the template in the editor.
 */
 
 body {
-      background-color: rgba(0,238,247,1);
+      //background-color: rgba(0,238,247,1);
+      background-color: rgba(69,184,226,1);
 }
 
 @font-family-base
@@ -31,7 +32,8 @@ body {
 .header-jumbo{
     padding: 15px 0;
     margin-bottom:0px;
-    background-color:rgba(165,9,169,1);
+   // background-color:rgba(165,9,169,1);
+   background-color: rgba(69,184,226,1);
     
 }
 
@@ -44,7 +46,7 @@ body {
 #logo-gomaespuma
 {
     width:100%;
-    max-width:620px;
+    max-width:730px;
     height:auto;
 }
 
