@@ -24,6 +24,7 @@ Thumbs.db
 app/tmp/*
 app/temporales
 assets/*
+assets/
 
 # Dont ignore webroot
 !app/webroot
