@@ -43,11 +43,8 @@ class HomeController extends AppController {
         if(!empty($this->request->data))
         {
             $data = $this->request->data;
-            $this->log("Se enviara un EMAIL!!! Data = " . print_r($data,true),"debug");
             
-            $this->__agregarCliente($data);
-
-            /*if($data['nombre'] != "" && $data['email'] != "" && $data['mensaje'] != "")
+            if($data['nombre'] != "" && $data['email'] != "" && $data['mensaje'] != "")
             {
                     App::uses('CakeEmail', 'Network/Email');  
 
@@ -81,7 +78,8 @@ class HomeController extends AppController {
             else
             {
                 $this->Session->setFlash("Debes rellenar todos los campos del formulario de Contacto.","error");
-            }*/
+            }
+            
             $this->Session->setFlash("Por favor envianos un correo a info@gomaespumacolor.com , este formulario aun no esta activo.","error");
             $this->redirect(array("controller"=>"home","action"=>"home"));
         }
