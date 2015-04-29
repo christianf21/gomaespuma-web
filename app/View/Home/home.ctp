@@ -29,7 +29,7 @@
             <div class="container-fluid">
                     
                     <div class="col-md-8">
-                        <h2>Bienvenidos a Goma Espuma Color</h2>
+                        <h2>¡Bienvenidos a GomaEspumaColor!</h2>
                         <div class="thumbnail">
                             <p>La Goma Espuma se puede usar de muchas maneras; desde decoraciones para fiestas, decoraciones tematicas, hora loca, hasta para teatro, manualidades, disfraces, publicidad…entre otros.</p>
                             <p>Aqui en Goma Espuma Color tenemos una serie de productos que ofrecemos. Vendemos laminas de goma espuma en diferentes tamaños y espesores.</p>
