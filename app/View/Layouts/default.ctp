@@ -36,6 +36,8 @@
         
         
         echo $this->Html->meta('favicon.ico',$this->base.'/favicon.ico',array('type' => 'icon')); 
+        
+        echo $this->element("google-analytics");
     ?>
     
     <meta name="description" content="Venta de laminas de Goma Espuma en todos los colores. Envios nacionales e internacionales.">
