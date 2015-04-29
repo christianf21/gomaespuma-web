@@ -96,8 +96,45 @@ class HomeController extends AppController {
             $this->request->data['Cliente']['email'] = $data['email'];
             $this->request->data['Cliente']['fecha_contacto'] = date("d-m-Y H:i:s");
             $this->request->data['Cliente']['ip'] = $_SERVER['REMOTE_ADDR'];
+            $this->request->data['Cliente']['mensaje'] = $data['mensaje'];
             $this->Cliente->save($this->request->data);
         }
     }
+    
+    // Login temporal
+    public function entrar($pass = null)
+    {
+        $check = "m5218354";
+        
+        if(!$this->Session->check("usuarioAdmin"))
+        {
+            if( $pass != null)
+            {
+                if($pass == $check)
+                {
+                    $this->Session->write("usuarioAdmin",true);
+                    $this->redirect(array("controller"=>"admin","action"=>"dashboard"));
+                }
+                else
+                {
+                    $this->redirect(array("controller"=>"home","action"=>"home"));
+                }
+            }
+        }
+        else
+        {
+            $this->redirect(array("controller"=>"admin","action"=>"dashboard"));
+        }
+        
+        
+    }
+    
+    public function salir()
+    {
+        $this->Session->destroy();
+        $this->Session->setFlash("Sesion de admin finalizada!","success");
+        $this->redirect(array("controller"=>"home","action"=>"home"));
+    }
+   
     
 }

@@ -18,6 +18,17 @@ class Cliente extends AppModel{
     public $useTable='cliente';
     public $primaryKey='id';
    
+    public function listarClientesAdmin()
+    {
+        $parametros = array(
+                'recursive'=>-1,
+                'order'=>array(
+                        'Cliente.id DESC'
+                )
+        );
+        
+        return $this->find("all",$parametros);
+    }
     
     public function emailExiste($email)
     {
