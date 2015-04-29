@@ -46,7 +46,7 @@
     <meta name="keywords" content="Goma Espuma en Colores, Goma Espuma color, goma espuma, goma eva, colores en goma espuma, espuma de color,espucolor,colores espuma,hora loca, fiesta match, fiesta colores goma espuma, birretes, gorro, boda, fiesta de bodas, como hacer goma espuma en colores">
     
     
-    <title>Goma Espuma en Colores</title>
+    <title>Goma Espuma en Colores, Venta de laminas de Goma Espuma en todos los colores, Envios nacionales e internacionales.</title>
 </head>
 <body>
     <div class="container" id="wrapper">
