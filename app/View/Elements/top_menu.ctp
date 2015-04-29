@@ -24,6 +24,9 @@
                 <!--li class="<?php echo (isset($productos) ? "active" : "") ?>"><?php echo $this->Html->link("productos",array("controller"=>"home","action"=>"work")); ?></li>
                 <li class="<?php echo (isset($galeria) ? "active" : "") ?>"><?php echo $this->Html->link("galeria",array("galeria"=>"home","action"=>"contact")); ?></li-->
                 <li class="<?php echo (isset($contacto) ? "active" : "") ?>"><?php echo $this->Html->link("contáctanos",array("controller"=>"home","action"=>"contacto")); ?></li>
+                <?php if($this->Session->check("usuarioAdmin")): ?>
+                    <li class="<?php echo (isset($admin) ? "active" : "") ?>"><?php echo $this->Html->link("admin",array("controller"=>"admin","action"=>"dashboard")); ?></li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>

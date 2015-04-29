@@ -39,7 +39,8 @@ class AdminController extends AppController {
                 $this->Session->setFlash('área restringida','fallido');
                 $this->redirect(array('controller'=>'home','action'=>'home'));
             }
-
+            
+            $this->set("admin","");
         }
 
     // Enseña la vista principal de la pagina
