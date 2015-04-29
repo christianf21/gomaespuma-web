@@ -8,12 +8,6 @@
 /build
 /dist
 /tags
-*.mo
-
-# IDE and editor specific files #
-#################################
-/nbproject
-.idea
 
 # OS generated files #
 ######################
@@ -25,3 +19,21 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Ignore the logs and cache
+app/tmp/*
+app/temporales
+assets/
+
+# Dont ignore webroot
+!app/webroot
+
+# Only the asset files and folders
+app/webroot/files
+app/webroot/fonts
+app/webroot/img/*
+
+# Also ignore the folder where the CakePHP Libs are, and some
+# external libraries in Vendor.
+app/Lib/*
+app/Vendor/*
