@@ -23,8 +23,8 @@ Thumbs.db
 # Ignore the logs and cache
 app/tmp/*
 app/temporales
-assets/*
-assets/
+/assets/*
+/assets/
 
 # Dont ignore webroot
 !app/webroot
